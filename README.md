@@ -38,13 +38,13 @@ make                               # для Linux/macOS
 #### 📁 Структура релиза
 
 ```text
-realeses/linux/
+releases/linux/
 ├── Web-agent
 └── config.json
 ```
 ### ▶️ Запуск
 ```text
-cd realeses/linux
+cd releases/linux
 chmod +x Web-agent
 ./Web-agent
 ```
@@ -58,7 +58,7 @@ chmod +x Web-agent
 ## 🪟 Windows
 #### 📁 Структура релиза
 ```text
-realeses/windows/
+releases/windows/
 ├── Web-agent.exe
 └── config.json
 ```
@@ -66,7 +66,7 @@ realeses/windows/
 
 Откройте PowerShell или командную строку:
 ```text
-cd realeses\windows
+cd releases\windows
 .\Web-agent.exe
 ```
 ### ✅ Проверка работы
