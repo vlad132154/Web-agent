@@ -1,0 +1,11 @@
+{
+    "UID": "MEGAKNIGHT",
+    "access_code": "c49522-1acc-ea7d-33e7-8966268a",
+    "descr": "Web-agent",
+    "log_file": "./agent.log",
+    "poll_interval_sec": 20,
+    "result_directory": "./results",
+    "server_url": "https://xdev.arkcom.ru:9999/app/webagent1/api",
+    "task_directory": "./tasks",
+    "task_program": "/usr/bin/nano"
+}

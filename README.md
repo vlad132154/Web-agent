@@ -1,1 +1,78 @@
-# Web-agent
+# WEB-AGENT
+
+Кроссплатформенный фоновый агент для удаленного управления и выполнения задач.
+
+[![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/)
+[![CMake](https://img.shields.io/badge/CMake-3.15+-brightgreen.svg)](https://cmake.org/)
+
+## 📋 О проекте
+
+WEB-AGENT - это фоновый клиент, который получает инструкции от сервера и выполняет локальные задачи.
+
+Поддерживает Windows 10+, Linux (Ubuntu 20.04+) и macOS 12+.
+
+## 🚀 Быстрый старт
+
+```bash
+git clone https://github.com/G-leviathan-O/Web-agent.git
+cd Web-agent
+mkdir build && cd build
+cmake ..
+cmake --build . --config Release  # для Windows
+make                               # для Linux/macOS
+```
+## 📚 Документация
+
+- [USER-GUIDE.md](USER-GUIDE.md) — установка, настройка, решение проблем
+- [ARCHITECTURE.md](ARCHITECTURE.md) — устройство проекта для разработчиков
+- [ARCHITECTURE.pdf](ARCHITECTURE.pdf) — архитектура проекта
+- [API.md](API.md) — взаимодействие с сервером
+
+## 🚀 Как запустить готовый релиз Web-Agent на Linux и Windows
+Агент запускается как фоновое приложение и требует наличия файла конфигурации `config.json` в той же директории, что и исполняемый файл.
+
+---
+
+## 🐧 Linux
+
+#### 📁 Структура релиза
+
+```text
+realeses/linux/
+├── Web-agent
+└── config.json
+```
+### ▶️ Запуск
+```text
+cd realeses/linux
+chmod +x Web-agent
+./Web-agent
+```
+### ✅ Проверка работы
+
+После запуска:
+
+создаётся файл логов (например agent.log);
+агент подключается к серверу;
+выполняются задачи (если они есть).
+## 🪟 Windows
+#### 📁 Структура релиза
+```text
+realeses/windows/
+├── Web-agent.exe
+└── config.json
+```
+### ▶️ Запуск
+
+Откройте PowerShell или командную строку:
+```text
+cd realeses\windows
+.\Web-agent.exe
+```
+### ✅ Проверка работы
+
+После запуска:
+
+создаётся файл логов (например agent.log);
+агент подключается к серверу;
+выполняются задачи (если они есть).
