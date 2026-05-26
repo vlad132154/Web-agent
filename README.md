@@ -14,7 +14,7 @@ WEB-AGENT - это фоновый клиент, который получает 
 ## 🚀 Быстрый старт
 
 ```bash
-git clone https://github.com/G-leviathan-O/Web-agent.git
+git clone https://github.com/vlad132154/Web-agent.git
 cd Web-agent
 mkdir build && cd build
 cmake ..
